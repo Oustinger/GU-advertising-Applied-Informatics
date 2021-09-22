@@ -1,0 +1,60 @@
+.use {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: 'r r c c' '. s s .';
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 425px) {
+    .use {
+        grid-template-areas: 'r' 'c' 's';
+        grid-template-columns: 1fr;
+    }
+}
+
+.use__research {
+    grid-area: r;
+}
+
+.use__create {
+    grid-area: c;
+}
+
+.use__support {
+    grid-area: s;
+}
+
+.use__title-container {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.use__title {
+    padding: 0.6rem 1.2rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 425px) {
+    .use__title {
+        font-size: 1.2rem;
+    }
+}
+
+.use_img {
+    height: 28rem;
+}
+
+.use__research_img {
+    background-image: url(https://adindex.ru/files2/publications/2016_11/155746_294x224.jpg);
+}
+
+.use__create_img {
+    background-image: url(https://www.hse.ru/data/2021/01/26/1401213400/20190323_3286%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg);
+}
+
+.use__support_img {
+    background-image: url(https://habrastorage.org/getpro/habr/post_images/9e9/82a/690/9e982a690a057f99cedf68f57b04b6c3.png);
+}

@@ -1,0 +1,80 @@
+html {
+    --screen-max-width: 1400px;
+    --color-main: #000;
+    --color-text: rgb(145, 145, 145);
+    --color-contrast: #0055ff;
+    --color-bg-page: #f9f9fd;
+    --color-bg-section: #fff;
+    --font-main: 'Montserrat', sans-serif;
+    --shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    --shadow-inset: 0px 0px 6px 0px rgba(0, 0, 0, 0.1) inset;
+    --window-width: calc(100vw - var(--scrollbar-width));
+
+    color: var(--color-text);
+    font-size: 13px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    line-height: 1.5;
+    background: var(--color-bg-page);
+}
+
+body {
+    min-height: 100vh;
+    max-width: var(--screen-max-width);
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+    background: var(--color-bg-page);
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    flex-grow: 1;
+}
+
+.title,
+h1,
+h2,
+h3 {
+    color: var(--color-text);
+    margin: 0;
+    font-family: var(--font);
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section {
+    padding: 1rem;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.title {
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    background-color: var(--color-bg-section);
+}
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 1.3rem;
+    }
+}
+
+.text-contrast {
+    color: var(--color-contrast);
+}
