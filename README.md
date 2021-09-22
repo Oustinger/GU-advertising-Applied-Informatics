@@ -19,4 +19,4 @@ Clone the project and open `index.html` file.
 
 ## App screenshot
 
-![screenshot](https://i.imgur.com/PqLD4FS.png "Screenshot")
+![screenshot](https://i.imgur.com/IituZwO.png "Screenshot")
